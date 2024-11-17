@@ -5,10 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "movies_app/includes/header.css" %}">
     {% block css_files %}{% endblock css_files %}
-    {% block title %}{% endblock title %}
+    <title>{% block title %}{% endblock title %}</title>
 </head>
 <body>
+    {% include "movies_app/includes/header.html" %}
     {% block content %}{% endblock content %}
 </body>
 </html>
